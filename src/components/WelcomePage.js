@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import heart from "../media/hardcore.png";
 import themeAPZ from "./../questions/apz.json";
 import themeAPZ2 from "./../questions/apz2.json";
 import Theme from "./Theme";

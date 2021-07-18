@@ -35,23 +35,6 @@ export default function Question({ current, questions, setAnswer, setCurrent, ti
         }
     }
 
-    useEffect(() => {
-        let arrowListener = (event) => {
-            switch (event.key) {
-                case "ArrowLeft":
-                    moveBack(event)
-                    break
-                case "ArrowRight":
-                    moveForward(event)
-                    break
-                default:
-                    return
-            }
-        }
-        // document.addEventListener("keydown", arrowListener)
-        // return () => document.removeEventListener("keydown", arrowListener)
-    }, [])
-
     if (!current.options)
         return ""
     let options = current.options.map((option, i) => {
