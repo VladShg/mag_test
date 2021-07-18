@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { TestContext } from "./context/TestContext";
+import { useRoutes } from "./routes";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let routes = useRoutes()
+    const [themes, setThemes] = useState([])
+    const [timeEnd, setTimeEnd] = useState(null)
+    const [timeStart, setTimeStart] = useState(null)
+    const [questions, setQuestions] = useState([])
+    const [current, setCurrent] = useState({})
+
+    const context = {
+        themes: themes,
+        current: current,
+        timeEnd: timeEnd,
+        timeStart: timeStart,
+        questions: questions,
+        setThemes: setThemes,
+        setCurrent: setCurrent,
+        setTimeEnd: setTimeEnd,
+        setTimeStart: setTimeStart,
+        setQuestions: setQuestions
+    }
+
+    return (
+        <TestContext.Provider value={context}>
+            <Router>{routes}</Router>
+        </TestContext.Provider>
+    );
 }
 
 export default App;

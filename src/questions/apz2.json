@@ -1,0 +1,86 @@
+{
+    "name": "АВПЗ Практика",
+    "selected": 1,
+    "questions": [
+        {
+            "question": "Які події допустимі на діаграмі станів (State chart diagram)?",
+            "options": [
+                ["when(), after()", 1],
+                ["include ()", 0],
+                ["extend ()", 0],
+                ["aggregation ()", 0],
+                ["inharitance ()", 0]
+            ]
+        },
+        {
+            "question": "На концептуальному рівні Діаграма класів повинна включати тільки",
+            "options": [
+                ["тільки атрибути", 1],
+                ["тільки операції", 0],
+                ["тільки методи ", 0],
+                ["атрибути та операції", 0],
+                ["жодна з відповідей не правільна", 0]
+            ]
+        },
+        {
+            "question": "Діаграма взаємодії є комбінованим терміном для",
+            "options": [
+                ["Sequence Diagram + Collaboration Diagram", 1],
+                ["Activity Diagram + State Chart Diagram", 0],
+                ["Deployment Diagram + Collaboration Diagram", 0],
+                ["Use Case + Activity Diagram", 0],
+                ["жодна з відповідей не правильна", 0]
+            ]
+        },
+        {
+            "question": "Яка з наступних діаграм орієнтована в часі",
+            "options": [
+                ["Sequence Diagram", 1],
+                ["Collaboration Diagram", 0],
+                ["Activity Diagram", 0],
+                ["Deployment Diagram", 0],
+                ["Use Case Diagram", 0]
+            ]
+        },
+        {
+            "question": "Скільки типів діаграм існує в Unified Modelling Language?",
+            "options": [
+                ["9", 1],
+                ["8", 0],
+                ["7", 0],
+                ["6", 0],
+                ["5", 0]
+            ]
+        },
+        {
+            "question": "Що таке фізичний елемент, який існує під час виконання в Unified Modelling Language?",
+            "options": [
+                ["вузол", 1],
+                ["інтерфейс", 0],
+                ["діяльність", 0],
+                ["варіант використання", 0],
+                ["жодна з відповідей не правильна", 0]
+            ]
+        },
+        {
+            "question": "Якщо ви працюєте в режимі реального часу з додатком або системою, які включають паралельну обробку процесів, що б ви використали?",
+            "options": [
+                ["State chart diagram", 1],
+                ["Activity diagram", 0],
+                ["Sequence diagram", 0],
+                ["Object diagram", 0],
+                ["Use Case Diagram", 0]
+            ]
+        },
+        {
+            "question": "Який з наступних термінів найкраще визначається твердженням: \"структурні відносини, які визначають, що об'єкти однієї речі пов'язані з об'єктами іншої\"?",
+            "options": [
+                ["Association ", 1],
+                ["Aggregation", 0],
+                ["Realization", 0],
+                ["Generalization", 0],
+                ["Include", 0]
+            ]
+        }
+    ]
+}
